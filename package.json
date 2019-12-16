@@ -1,0 +1,21 @@
+{
+    "name": "po-snippets",
+    "displayName": "po-snippets",
+    "description": "",
+    "version": "0.0.2",
+    "publisher": "POSnippets",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ]
+    }
+}

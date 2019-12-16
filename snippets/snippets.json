@@ -1,0 +1,1157 @@
+{
+	// Place your GLOBAL snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+	"PO Tag 1": {
+		"prefix": "<po-accordion>",
+		"scope": "html",
+		"body": 
+			[
+				"<!-- Para usar <po-accordion>. importe BrowserAnimationsModule no módulo principal da sua aplicação -->"
+				"<po-accordion>"
+				"	<po-accordion-item p-label=\"Portinari Accordion 1\">"
+				"			Accordion 1"
+				"	</po-accordion-item>"
+				"	<po-accordion-item p-label=\"Portinari Accordion 2\">"
+				"			Accordion 2"
+				"	</po-accordion-item>"
+				"</po-accordion>"
+			],
+			"description": "Insere Accordion do Portinari"
+	},
+
+	"PO Tag 2": {
+		"prefix": "<po-avatar>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-avatar"
+				"		p-size=\"md\""
+				"		p-src=\"\">"
+				"</po-avatar>"
+			],
+			"description": "Insere Avatar do Portinari"
+	},
+
+	"PO Tag 3": {
+		"prefix": "<po-breadcrumb>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-breadcrumb"
+				"		[p-items]=\"breadcrumbItems\""
+				"		p-favorite-service=\"\""
+				"		p-params-service=\"\" >"
+				"</po-breadcrumb>"
+			],
+			"description": "Insere Breadcrumb do Portinari"
+	},
+
+	"PO Tag 4": {
+		"prefix": "<po-button>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-button"
+				"		p-disabled=\"false\""
+				"		p-icon=\"po-icon-star-filled\""
+				"		p-label=\"\""
+				"		p-loading=\"false\""
+				"		p-small=\"false\""
+				"		p-type=\"default\""
+				"		(p-click)=\"onClickButton()\">"
+				"</po-button>"
+			],
+			"description": "Insere Botão do Portinari"
+	},
+
+	"PO Tag 5": {
+		"prefix": "<po-button-group>",
+		"scope": "html",
+		"body": 
+			[
+				"<!-- Procure utilizar no máximo 3 ações para cada po-button-group -->"
+				"<po-button-group"
+				"		[t-buttons]=\"thfButtonGroupItemList>\""
+				"		t-small=\"false\""
+				"		t-toggle=\"none|single|multiple\">"
+				"</po-button-group>"
+			],
+			"description": "Insere Grupo de Botões do Portinari"
+	},
+
+	"PO Tag 6": {
+		"prefix": "<po-calendar>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-calendar"
+				"		(p-change)=\"onChangeCalendar()\""
+				"		p-locale=\"\""
+				"		p-max-date=\"any\""
+				"		p-min-date=\"any\">"
+				"</po-calendar>"
+			],
+			"description": "Insere o Calendário do Portinari"
+	},
+
+	"PO Tag 7": {
+		"prefix": "<po-chart>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-chart"
+				"		p-height=\"400\""
+				"		p-series=\"PoChartGaugeSerie | (PoDonutChartSeries | PoPieChartSeries)[]\""
+				"		(p-series-click)=\"onSeriesClick(\\$event)\""
+				"		(p-series-hover)=\"onSeriesHover(\\$event)\""
+				"		p-title=\"\""
+				"		p-type=\"PoChartType\">"
+				"</po-chart>"
+			],
+			"description": "Insere o Gráfico do Portinari"
+	},
+
+	"PO Tag 8": {
+		"prefix": "<po-checkbox>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-checkbox"
+				"		(p-change)=\"onChangeCheckBox()\""
+				"		p-disabled=\"false\""
+				"		p-label=\"\""
+				"		name=\"\">"
+				"</po-checkbox>"
+			],
+			"description": "Insere o Checkbox do Portinari"
+	},
+
+	"PO Tag 9": {
+		"prefix": "<po-checkbox-group>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-checkbox-group"
+				"		class=\"po-md-6\""
+				"		[(ngModel)]=\"\""				
+				"		p-columns=\"1\""
+				"		p-disabled=\"false\""
+				"		p-help=\"\""
+				"		p-label=\"\""				
+				"		p-indeterminate=\"false\""
+				"		name=\"\""
+				"		p-optional=\"false\""
+				"		[p-options]=\"checkboxGroupOptions\""
+				"		p-required=\"false\""
+				"		(p-change)=\"onChangeCheckboxOption(\\$event)\">"
+				"</po-checkbox-group>"
+			],
+			"description": "Insere um grupo de checkbox do Portinari"
+	},
+
+	"PO Tag 10": {
+		"prefix": "<po-code-editor>",
+		"scope": "html",
+		"body": 
+			[
+				"<!-- Não esqueça de fazer a instalação do pacote @portinari/portinari-code-editor em sua aplicação -->"
+				"<!-- npm i --save @portinari/portinari-code-editor -->"
+				"<!-- Adicionar o PoCodeEditorModule em seu projeto -->"
+				"<!-- Adicionar um asset ao arquivo angular.json, conforme documentação do componente -->"				
+				"<po-code-editor"
+				"		p-height=\"200\""
+				"		p-language=\"plainText\""
+				"		p-readonly=\"false\""
+				"		p-show-diff=\"false\""
+				"		p-theme=\"vs\">"
+				"</po-code-editor>"
+			],
+			"description": "Insere um editor de código do Portinari"
+	},
+
+	"PO Tag 11": {
+		"prefix": "<po-combo>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-combo"
+				"		class=\"po-md-6\""
+				"		name=\"\""
+				"		[(ngModel)]=\"\""
+				"		p-label=\"\""
+				"		p-icon=\"po-icon-star-filled\""
+				"		p-help=\"\""
+				"		p-placeholder=\"\""
+				"		p-field-label=\"label\""
+				"		p-field-value=\"value\""
+				"		[p-options]=\"comboOptions\""
+				"		p-optional=\"false\""
+				"		p-debounce-time=\"400\""
+				"		p-disabled=\"false\""
+				"		p-disabled-init-filter=\"false\""
+				"		p-filter-minlength=\"0\""
+				"		p-filter-mode=\"startsWith\""
+				"		p-filter-service=\"\""
+				"		p-filter-params=\"\""
+				"		p-required=\"false\""
+				"		p-sort=\"\""
+				"		p-literals=\"PoComboLiterals\""
+				"		p-change-on-enter=\"false\""
+				"		(p-change)=\"onChangeComboOption(\\$event)\">"
+			"</po-combo>"
+			],
+			"description": "Insere um combo do Portinari"
+	},
+
+	"PO Tag 12": {
+		"prefix": "<po-container>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-container"
+				"		p-height=\"\""
+				"		p-no-border=\"false\""
+				"		p-no-padding=\"false\""
+				"		p-no-shadow=\"false\">"
+				"</po-container>"
+			],
+			"description": "Insere um container do Portinari"
+	},
+
+	"PO Tag 13": {
+		"prefix": "<po-datepicker>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-datepicker"
+				"		class=\"po-md-6\""
+				"		name=\"\""
+				"		[(ngModel)]=\"\""
+				"		p-locale=\"pt\""
+				"		p-focus=\"false\""
+				"		p-clean=\"true\""
+				"		p-disabled=\"false\""
+				"		p-error-pattern=\"\""
+				"		p-format=\"dd/mm/yyyy\""
+				"		p-help=\"\""
+				"		p-iso-format=\"PoDatepickerIsoFormat\""
+				"		p-label=\"\""
+				"		p-max-date=\"string | Date\""
+				"		p-min-date=\"string | Date\""
+				"		p-no-autocomplete=\"false\""
+				"		p-optional=\"false\""
+				"		p-placeholder=\"\""
+				"		p-readonly=\"false\""
+				"		p-required=\"false\""
+				"		(p-blur)=\"onBlurDatepicker(\\$event)\""
+				"		(p-change)=\"onChangeDatepicker(\\$event)\">"
+				"</po-datepicker>"
+			],
+			"description": "Insere um datepicker do Portinari"
+	},
+
+	"PO Tag 14": {
+		"prefix": "<po-datepicker-range>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-datepicker-range"
+				"        class=\"po-md-6\""
+				"        p-clean=\"true\""
+				"        p-disabled=\"false\""
+				"        p-end-date=\"string | Date\""
+				"        p-help=\"\""
+				"        p-label=\"\""
+				"        p-literals=\"PoDatepickerRangeLiterals\""
+				"        p-no-autocomplete=\"false\""
+				"        (p-change)=\"onChangeDate()\""
+				"        p-optional=\"false\""
+				"        p-readonly=\"false\""
+				"        p-required=\"false\""
+				"        p-start-date=\"string | Date\">"
+				"</po-datepicker-range>"
+			],
+			"description": "Insere um range datepicker do Portinari"
+	},
+
+	"PO Tag 15": {
+		"prefix": "<po-decimal>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-decimal"
+				"         class=\"po-md-6\""
+				"         name=\"\""
+				"         p-focus=\"false\""
+				"         (p-blur)=\"onBlurDecimal(\\$event)\""
+				"         (p-enter)=\"onEnterDecimal(\\$event)\""
+				"         (p-change)=\"onChangeDecimal(\\$event)\""
+				"         (p-change-model)=\"onChangeModelDecimal(\\$event)\""
+				"         [(ngModel)]=\"\""
+				"         p-clean=\"true\""
+				"         p-decimals-length=\"2\""
+				"         p-disabled=\"false\""
+				"         p-error-pattern=\"\""
+				"         p-label=\"\""
+				"         p-help=\"\""
+				"         p-icon=\"po-icon-agro-business\""
+				"         p-mask=\"\""
+				"         p-mask-format-model=\"false\""
+				"         p-maxlength=\"\""
+				"         p-minlength=\"\""
+				"         p-no-autocomplete=\"false\""
+				"         p-optional=\"false\""
+				"         p-placeholder=\"\""
+				"         p-pattern=\"\""
+				"         p-thousand-maxlength=\"13\""
+				"         p-readonly=\"false\""
+				"         p-required=\"false\">"
+				"</po-decimal>"
+			],
+			"description": "Insere um decimal do Portinari"
+	},
+
+	"PO Tag 16": {
+		"prefix": "<po-disclaimer-group>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-disclaimer-group"
+				"    p-title=\"\""
+				"    [p-disclaimers]=\"disclaimerGroup\""
+				"    p-hide-remove-all=\"false\""
+				"    (p-change)=\"onChangeDisclaimerGroup(\\$event)\">"
+				"</po-disclaimer-group>"
+			],
+			"description": "Insere um grupo de disclaimer do Portinari"
+	},
+
+	"PO Tag 17": {
+		"prefix": "<po-divider>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-divider"
+				"    p-label=\"\">"
+				"</po-divider>"
+			],
+			"description": "Insere um divider do Portinari"
+	},
+
+	"PO Tag 18": {
+		"prefix": "<po-dropdown>",
+		"scope": "html",
+		"body": 
+			[
+				"<!-- Caso não haja configuração de rotas em sua aplicação, é necessário importar o RouterModule no módulo principal -->"
+				"<po-dropdown"
+				"       [p-actions]=\"dropdownActions\""
+				"       p-disabled=\"false\""
+				"       p-label=\"\" >"
+				"</po-dropdown>"
+			],
+			"description": "Insere um dropdown do Portinari"
+	},
+
+	"PO Tag 19": {
+		"prefix": "<po-dynamic-form>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-dynamic-form"
+				"		p-auto-focus=\"\""
+				"		p-fields=\"Array<PoDynamicFormField>\""
+				"		(p-form)=\"EventEmitter\""
+				"		p-group-form=\"false\""
+				"		p-value=\"any\" >"
+				"</po-dynamic-form>"
+			],
+			"description": "Insere um formulário dinâmico do Portinari"
+	},
+
+	"PO Tag 20": {
+		"prefix": "<po-dynamic-view>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-dynamic-view"
+				"		p-fields=\"Array<PoDynamicViewField>\""
+				"		p-show-all-value=\"false\""
+				"		p-value=\"any\" >"
+				"</po-dynamic-view>"
+			],
+			"description": "Insere uma view dinâmica do Portinari"
+	},
+
+	"PO Tag 21": {
+		"prefix": "<po-email>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-email"
+				"		class=\"po-md-6\""
+				"		name=\"\""
+				"		[(ngModel)]=\"\""
+				"		p-focus=\"false\""
+				"		(p-blur)=\"onBlurEmail(\\$event)\""
+				"		(p-enter)=\"onEnterEmail(\\$event)\""
+				"		(p-change)=\"onChangeEmail(\\$event)\""
+				"		(p-change-model)=\"onChangeModelEmail(\\$event)\""
+				"		p-clean=\"true\""
+				"		p-disabled=\"false\""
+				"		p-error-pattern=\"\""
+				"		p-label=\"\""
+				"		p-help=\"\""
+				"		p-icon=\"po-icon-agro-business\""
+				"		p-mask=\"\""
+				"		p-mask-format-model=\"false\""
+				"		p-maxlength=\"\""
+				"		p-minlength=\"\""
+				"		p-placeholder=\"\""
+				"		p-no-autocomplete=\"false\""
+				"		p-optional=\"false\""
+				"		p-pattern=\"\""
+				"		p-readonly=\"false\""
+				"		p-required=\"false\">"
+				"</po-email>"
+
+			],
+			"description": "Insere um email do Portinari"
+	},
+
+	"PO Tag 22": {
+		"prefix": "<po-grid>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-grid"
+				"		p-columns=\"Array<any>\""
+				"		p-data=\"Array<any>\""
+				"		p-row-actions=\"PoGridRowActions\" >"
+				"</po-grid>"
+
+			],
+			"description": "Insere um grid do Portinari"
+	},
+
+	"PO Tag 23": {
+		"prefix": "<po-info>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-info"
+				"		p-label=\"\""
+				"		p-label-size=\"7\""
+				"		p-orientation=\"vertical\""
+				"		p-url=\"\""
+				"		p-value=\"\">"
+				"</po-info>"
+
+			],
+			"description": "Insere um info do Portinari"
+	},
+
+	"PO Tag 24": {
+		"prefix": "<po-input>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-input"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    [(ngModel)]=\"\""
+				"    p-label=\"\""
+				"    p-help=\"\""
+				"    p-placeholder=\"\""
+				"    p-clean=\"true\""
+				"    p-icon=\"po-icon-agro-business\""
+				"    p-mask=\"\""
+				"    p-mask-format-model=\"false\""
+				"    p-maxlength=\"\""
+				"    p-minlength=\"\""
+				"    p-disabled=\"false\""
+				"    p-focus=\"false\""
+				"    p-readonly=\"false\""
+				"    p-required=\"false\""
+				"    p-pattern=\"\""
+				"    p-error-pattern=\"\""
+				"    (p-blur)=\"onBlurInput(\\$event)\""
+				"    (p-enter)=\"onEnterInput(\\$event)\""
+				"    (p-change)=\"onChangeInput(\\$event)\""
+				"    (p-change-model)=\"onChangeModelInput(\\$event)\">"
+				"</po-input>"
+
+			],
+			"description": "Insere um input do Portinari"
+	},
+
+	"PO Tag 25": {
+		"prefix": "<po-list-view>",
+		"scope": "html",
+		"body": 
+			[
+				"<!-- Deve ser importado o módulo BrowserAnimationsModule no módulo principal da sua aplicação. -->"
+				"<po-list-view"
+				"      p-actions=\"PoListViewAction[]\""
+				"      p-height=\"200\""
+				"      p-hide-select-all=\"false\""
+				"      p-items=\"any[]\""
+				"      p-literals=\"PoListViewLiterals\""
+				"      p-property-link=\"\""
+				"      p-property-title=\"\""
+				"      p-select=\"false\""
+				"      (p-show-more)=\"showMoreList()\""
+				"      p-show-more-disabled=\"true\""
+				"      (p-title-action)=\"onClickTitle()\">"
+				"</po-list-view>"
+
+			],
+			"description": "Insere um View de Listagem do Portinari"
+	},
+
+	"PO Tag 26": {
+		"prefix": "<po-loading-overlay>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-loading-overlay"
+				"		p-screen-lock=\"false\""
+				"		p-text=\"\">"
+				"</po-loading-overlay>"
+				
+			],
+			"description": "Insere um loading do Portinari"
+	},
+
+	"PO Tag 27": {
+		"prefix": "<po-login>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-login"
+				"      class=\"po-md-6\""
+				"      name=\"\""
+				"      p-focus=\"true\""
+				"      [(ngModel)]=\"\""
+				"      (p-blur)=\"onBlurLogin(\\$event)\""
+				"      (p-enter)=\"onEnterLogin(\\$event)\""
+				"      (p-change)=\"onChangeLogin(\\$event)\""
+				"      (p-change-model)=\"onChangeModelLogin(\\$event)\""
+				"      p-clean=\"true\""
+				"      p-disabled=\"false\""
+				"      p-error-pattern=\"\""
+				"      p-label=\"\""
+				"      p-help=\"\""
+				"      p-icon=\"po-icon-agro-business\""
+				"      p-maxlength=\"\""
+				"      p-minlength=\"\""
+				"      p-mask=\"\""
+				"      p-mask-format-model=\"false\""
+				"      p-no-autocomplete=\"false\""
+				"      p-optional=\"false\""
+				"      p-placeholder=\"\""
+				"      p-pattern=\"\""
+				"      p-readonly=\"false\""
+				"      p-required=\"true\">"
+				"</po-login>"
+				
+			],
+			"description": "Insere um login do Portinari"
+	},
+
+	"PO Tag 28": {
+		"prefix": "<po-lookup>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-lookup"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    [(ngModel)]=\"\""
+				"    [p-columns]=\"lookupColumns\""
+				"    [p-filter-service]=\"lookupFilterService\""
+				"    p-field-label=\"\""
+				"    p-field-value=\"\""
+				"    p-field-format=\"\""
+				"    p-label=\"\""
+				"    p-help=\"\""
+				"    p-placeholder=\"\""
+				"    p-focus=\"true\""
+				"    p-disabled=\"false\""
+				"    p-required=\"true\""
+				"    p-literals=\"PoLookupLiterals\""
+				"    p-no-autocomplete=\"false\""
+				"    p-optional=\"false\""
+				"    [p-filter-params]=\"lookupFilterParam\""
+				"    (p-selected)=\"onSelectedLookup(\\$event)\""
+				"    (p-error)=\"onErrorLookup(\\$event)\">"
+				"</po-lookup>"
+				
+			],
+			"description": "Insere um lookup do Portinari"
+	},
+
+	"PO Tag 29": {
+		"prefix": "<po-menu>",
+		"scope": "html",
+		"body": 
+			[
+				"<!-- É necessário importar o RouterModule e Routes do módulo principal da aplicação -->"
+				"<po-menu"
+				"    p-filter=\"false\""
+				"    [p-menus]=\"menuItems\""
+				"    p-collapsed=\"false\""
+				"    p-logo=\"\""
+				"    p-params=\"\""
+				"    p-service=\"string | PoMenuFilter\""
+				"    p-short-logo=\"\" >"
+				"</po-menu>"				
+			],
+			"description": "Insere um menu do Portinari"
+	},
+
+	"PO Tag 30": {
+		"prefix": "<po-modal>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-modal"
+				"    #modal"
+				"    p-title=\"\""
+				"    p-size=\"auto\""
+				"    p-click-out=\"false\""
+				"    p-hide-close=\"false\""
+				"    p-click-out=\"false\""
+				"    p-hide-close=\"false\""
+				"    [pt-primary-action]=\"modalPrimaryAction\""
+				"    [p-secondary-action]=\"modalSecondaryAction\">"
+				"</po-modal>"								
+			],
+			"description": "Insere um modal do Portinari"
+	},
+
+	"PO Tag 31": {
+		"prefix": "<po-modal-password-recovery>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-modal-password-recovery"
+				"    p-code-error=\"\""
+				"    (p-code-submit)=\"submitCode(\\$event); changeEvent('p-submit-code')\""
+				"    p-contact-email=\"\""
+				"    p-phone-mask=\"\""
+				"    (p-submit)=\"submit(\\$event); changeEvent('p-submit')\""
+				"    p-type=\"PoModalPasswordRecoveryType\""
+				"    p-url-recovery=\"\">"
+				"</po-modal-password-recovery>"
+			],
+			"description": "Insere um modal recovery do Portinari"
+	},
+
+	"PO Tag 32": {
+		"prefix": "<po-multiselect>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-multiselect"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    p-focus=\"false\""
+				"    [(ngModel)]=\"\""
+				"    p-label=\"\""
+				"    p-help=\"string\""
+				"    p-placeholder=\"\""
+				"    p-placeholder-search=\"Search\""
+				"    p-literals=\"PoMultiselectLiterals\""
+				"    [p-options]=\"multiselectOptions\""
+				"    p-optional=\"false\""
+				"    p-hide-search=\"false\""
+				"    p-disabled=\"false\""
+				"    p-filter-mode=\"startsWith\""
+				"    p-required=\"false\""
+				"    p-sort=\"\""
+				"    (p-change)=\"onChangeMultiselect(\\$event)\">"
+				"</po-multiselect>"
+				
+			],
+			"description": "Insere um multiselect do Portinari"
+	},
+
+	"PO Tag 33": {
+		"prefix": "<po-navbar>",
+		"scope": "html",
+		"body": 
+			[
+				"<!-- Deve ser importado o módulo BrowserAnimationsModule no módulo principal da sua aplicação -->"
+				"<po-navbar"
+				"	p-icon-actions=\"Array<PoNavbarIconAction>\""
+				"	p-items=\"Array<PoNavbarItem>\""
+				"	p-literals=\"PoNavbarLiterals\""
+				"	p-logo=\"\""
+				"	p-menu=\"PoMenuComponent\""
+				"	p-shadow=\"false\">"
+				"</po-navbar>"				
+			],
+			"description": "Insere um navbar do Portinari"
+	},
+
+	"PO Tag 34": {
+		"prefix": "<po-number>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-number"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    [(ngModel)]=\"\""
+				"    p-focus=\"false\""
+				"    (p-blur)=\"onBlurNumber(\\$event)\""
+				"    (p-enter)=\"onEnterNumber(\\$event)\""
+				"    (p-change)=\"onChangeNumber(\\$event)\""
+				"    (p-change-model)=\"onChangeModelNumber(\\$event)\""
+				"    p-clean=\"true\""
+				"    p-disabled=\"false\""
+				"    p-error-pattern=\"\""
+				"    p-help=\"\""
+				"    p-icon=\"po-icon-agro-business\""
+				"    p-label=\"\""
+				"    p-mask=\"\""
+				"    p-mask-format-model=\"false\""
+				"    p-maxlength=\"\""
+				"    p-minlength=\"\""
+				"    p-no-autocomplete=\"false\""
+				"    p-optional=\"false\""
+				"    p-placeholder=\"\""
+				"    p-readonly=\"false\""
+				"    p-required=\"false\""
+				"    p-pattern=\"\""
+				"    p-max=\"\""
+				"    p-min=\"\""
+				"    p-step=\"1\">"
+				"</po-number>"								
+			],
+			"description": "Insere um number do Portinari"
+	},
+
+	"PO Tag 35": {
+		"prefix": "<po-page-default>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-page-default"
+				"	p-title=\"\""
+				"	[p-actions]=\"pageActions\""
+				"	[p-breadcrumb]=\"pageBreadcrumb\">"
+				"</po-page-default>"
+											
+			],
+			"description": "Cria pagina default do Portinari"
+	},
+
+	"PO Tag 36": {
+		"prefix": "<po-page-detail>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-page-detail"
+				"		[p-breadcrumb]=\"pageBreadcrumb\""
+				"		p-literals=\"PoPageDetailLiterals\""
+				"		p-title=\"\">"
+				"</po-page-detail>"
+			],
+			"description": "Cria pagina de detalhe do Portinari"
+	},
+
+	"PO Tag 37": {
+		"prefix": "<po-page-edit>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-page-edit"
+				"    p-title=\"\""
+				"    p-disable-submit=\"false\""
+				"    [p-literals]=\"pageLiterals\""
+				"    [p-breadcrumb]=\"pageBreadcrumb\">"
+				"</po-page-edit>"
+			],
+			"description": "Cria pagina de edição do Portinari"
+	},
+
+	"PO Tag 38": {
+		"prefix": "<po-page-list>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-page-list"
+				"	p-title=\"\""
+				"	[p-actions]=\"pageActions\""
+				"	[p-filter]=\"pageFilter\""
+				"	[p-disclaimer-group]=\"pageDisclaimerGroup\""
+				"	[p-literals]=\"pageLiterals\""
+				"	[p-breadcrumb]=\"pageBreadcrumb\">"
+				"</po-page-list>"
+			],
+			"description": "Cria pagina de listagem do Portinari"
+	},
+
+	"PO Tag 39": {
+		"prefix": "<po-page-login>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-page-login"
+				"	[p-loading]=\"isLoading\""
+				"	[p-login]=\"loginModel\""
+				"	p-recovery-url=\"\""
+				"	p-register-url=\"\""
+				"	p-hide-remember-user=\"true\""
+				"	p-background=\"\""
+				"	p-literals=\"loginLiterals\""
+				"	p-login-pattern=\"\"" 
+				"	p-password-pattern=\"\""
+				"	[p-custom-field]=\"customField\""
+				"(p-login-submit)=\"onLoginSubmit(\\$event)\">"
+				"</po-page-login>"
+			],
+			"description": "Cria pagina de login do Portinari"
+	},
+
+	"PO Tag 40": {
+		"prefix": "<po-password>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-password"
+				"    name=\"\""
+				"    [(ngModel)]=\"\""
+				"    p-focus=\"true\""
+				"    (p-blur)=\"onBlurPassword(\\$event)\""
+				"    (p-enter)=\"onEnterPassword(\\$event)\""
+				"    (p-change)=\"onChangePassword(\\$event)\""
+				"    (p-change-model)=\"onChangeModelPassword(\\$event)\""
+				"    p-clean=\"true\""
+				"    p-disabled=\"false\""
+				"    p-error-pattern=\"\""
+				"    p-help=\"\""
+				"    p-hide-password-peek=\"false\""
+				"    p-icon=\"po-icon-agro-business\""
+				"    p-label=\"\""
+				"    p-maxlength=\"\""
+				"    p-minlength=\"\""
+				"    p-mask=\"\""
+				"    p-mask-format-model=\"false\""
+				"    p-no-autocomplete=\"false\""
+				"    p-optional=\"false\""
+				"    p-pattern=\"\""
+				"    p-placeholder=\"\""
+				"    p-readonly=\"false\""
+				"    p-required=\"true\">"
+				"</po-password>"				
+			],
+			"description": "Insere o password do Portinari"
+	},
+
+	"PO Tag 41": {
+		"prefix": "<po-popover>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-popover"
+				"    p-hide-arrow=\"false\""
+				"    p-position=\"right\""
+				"    p-target=\"ElementRef\""
+				"    p-title=\"\""
+				"    p-trigger=\"click\">"
+				"</po-popover>"			
+			],
+			"description": "Insere o popover do Portinari"
+	},
+
+	"PO Tag 42": {
+		"prefix": "<po-popup>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-popup"
+				"   #popup"
+				"   [p-actions]=\"popupActions\""
+				"   p-position=\"bottom-left\""
+				"   [p-target]=\"tagetElementRef\""
+				"   p-hide-arrow=\"|false,true|\""
+				"   p-custom-positions=\"\">"
+				"</po-popup>"	
+			],
+			"description": "Insere o popup do Portinari"
+	},
+
+	"PO Tag 43": {
+		"prefix": "<po-radio-group>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-radio-group"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    [(ngModel)]=\"\""
+				"    p-label=\"\""
+				"    p-columns=\"\""
+				"    p-disabled=\"false\""
+				"    p-help=\"\""
+				"    p-required=\"false\""
+				"    [p-options]=\"radioGroupOptions\""
+				"    (p-change)=\"onChangeRadioOption(\\$event)\">"
+				"</po-radio-group>"	
+			],
+			"description": "Insere o radio group do Portinari"
+	},
+
+	"PO Tag 44": {
+		"prefix": "<po-select>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-select"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    (p-change)=\"onChangeSelectOption(\\$event)\""
+				"    p-disabled=\"false\""
+				"    p-label=\"\""
+				"    p-help=\"string\""
+				"    [(ngModel)]=\"\""
+				"    [p-options]=\"selectOptions\""
+				"    p-optional=\"false\""
+				"    p-placeholder=\"\""
+				"    p-required=\"false\""
+				"    p-readonly=\"false\">"
+				"</po-select>"
+				
+			],
+			"description": "Insere o select do Portinari"
+	},
+
+	"PO Tag 45": {
+		"prefix": "<po-stepper>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-stepper"
+				"    class=\"po-md-6\""
+				"    p-mode=\"horizontal\""
+				"    p-sequential=\"true\""
+				"    p-step=\"1\""
+				"    p-step-icons=\"false\""
+				"    p-step-size=\"24\""
+				"    [p-steps]=\"stepperSteps\""
+				"    (p-change-step)=\"onChangeStep(\\$event)\">"
+				"</po-stepper>"
+			],
+			"description": "Insere o stepper do Portinari"
+	},
+
+	"PO Tag 46": {
+		"prefix": "<po-switch>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-switch"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    [(ngModel)]=\"\""
+				"    t-label=\"\""
+				"    t-label-on=\"\""
+				"    t-label-off=\"\""
+				"    t-label-position=\"right\""
+				"    t-help=\"\""
+				"    t-disabled=\"false\""
+				"    (t-change)=\"onChangeSwitch(\\$event)\">"
+				"</po-switch>"
+			],
+			"description": "Insere o switch do Portinari"
+	},
+
+	"PO Tag 47": {
+		"prefix": "<po-tab>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-tab"
+				"    t-label=\"false\""
+				"    t-hide=\"false\""
+				"    t-active=\"false\""
+				"    t-disabled=\"false\""
+				"    (t-click)=\"onClickTab(\\$event)\">"
+				"</po-tab>"
+			],
+			"description": "Insere o tab do Portinari"
+	},
+
+	"PO Tag 48": {
+		"prefix": "<po-table>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-table"
+				"    [p-actions]=\"tableActions\""
+				"    (p-all-selected)=\"onSelectAllTable(\\$event)\""
+				"    (p-all-unselected)=\"onUnselectAllTable(\\$event)\""
+				"    p-checkbox=\"false\""
+				"    [p-columns]=\"tableColumns\""
+				"    p-container=\"\""
+				"    p-height=\"\""
+				"    p-hide-detail=\"false\""
+				"    p-hide-select-all=\"false\""
+				"    p-hide-text-overflow=\"false\""
+				"    [p-items]=\"tableItems\""
+				"    p-literals=\"PoTableLiterals\""
+				"    p-loading=\"false\""
+				"    p-max-columns=\"100\""
+				"    (p-selected)=\"onSelectTable(\\$event)\""
+				"    (p-show-more)=\"onShowMoreTable(\\$event)\""
+				"    [p-show-more-disabled]=\"tableShowMoreControl\""
+				"    p-single-select=\"false\""
+				"    p-sort=\"false\""
+				"    p-striped=\"false\">"
+				"</po-table>"
+				
+			],
+			"description": "Insere o table do Portinari"
+	},
+
+	"PO Tag 49": {
+		"prefix": "<po-tabs>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-tabs"
+				"    t-small=\"false\">"
+				"</po-tabs>"
+			],
+			"description": "Insere o tabs do Portinari"
+	},
+
+	"PO Tag 50": {
+		"prefix": "<po-textarea>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-textarea"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    [(ngModel)]=\"\""
+				"    p-focus=\"false\""
+				"    (p-blur)=\"onBlurTextarea(\\$event)\""
+				"    (p-enter)=\"onEnterTextarea(\\$event)\""
+				"    (p-change)=\"onChangeTextarea(\\$event)\""
+				"    (p-change-model)=\"onChangeModelTextarea(\\$event)\""
+				"    p-disabled=\"false\""
+				"    p-help=\"\""
+				"    p-label=\"\""
+				"    p-max-length=\"\""
+				"    p-min-length=\"\""
+				"    p-optional=\"false\""
+				"    p-placeholder=\"\""
+				"    p-readonly=\"false\""
+				"    p-required=\"false\""
+				"    p-rows=\"3\">"
+				"</po-textarea>"
+			],
+			"description": "Insere o textarea do Portinari"
+	},
+
+	"PO Tag 51": {
+		"prefix": "<po-toolbar>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-toolbar"
+				"    p-actions=\"Array<PoToolbarAction>\""
+				"    p-actions-icon=\"\""
+				"    p-title=\"\""
+				"    [p-profile]=\"toolbarProfile\""
+				"    [p-profile-actions]=\"toolbarProfileActions\""
+				"    p-show-notification=\"true\""
+				"    [p-notification-number]=\"toolbarNotifications.length\""
+				"    [p-notification-actions]=\"toolbarNotificationActions\">"
+				"</po-toolbar>"				
+			],
+			"description": "Insere o toolbar do Portinari"
+	},
+
+	"PO Tag 52": {
+		"prefix": "<po-upload>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-upload"
+				"    class=\"po-md-6\""
+				"    name=\"\""
+				"    p-auto-upload=\"false\""
+				"    p-directory=\"false\""
+				"    p-disabled=\"false\""
+				"    p-drag-drop=\"false\""
+				"    p-drag-drop-height=\"320\""
+				"    p-form-field=\"files\""
+				"    [(ngModel)]=\"\""
+				"    p-help=\"\""
+				"    p-hide-restrictions-info=\"false\""
+				"    p-hide-select-button=\"false\""
+				"    p-hide-send-button=\"false\""
+				"    p-multiple=\"false\""
+				"    p-label=\"\""
+				"    p-literals=\"PoUploadLiterals\""
+				"    (p-error)=\"onErrorUpload(\\$event)\""
+				"    (p-success)=\"onSuccessUpload(\\$event)\""
+				"    (p-upload)=\"onUpload(\\$event)\""
+				"    p-optional=\"false\""
+				"    p-url=\"\""
+				"    p-required=\"false\""
+				"    [p-restrictions]=\"fileUploadRestrictions\">"
+				"</po-upload>"			
+			],
+			"description": "Insere o upload do Portinari"
+	},
+
+	"PO Tag 53": {
+		"prefix": "<po-widget>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-widget"
+				"    class=\"po-md-6\""
+				"    t-background=\"\""
+				"    (p-click)=\"onClickWidget(\\$event)\""
+				"    p-disabled=\"false\""
+				"    p-height=\"200\""
+				"    p-help=\"\""
+				"    p-no-shadow=\"true\""
+				"    (p-on-disabled)=\"onDisabledWidget(\\$event)\""
+				"    p-primary=\"false\""
+				"    (p-primary-action)=\"onPrimaryActionWidget(\\$event)\""
+				"    p-primary-label=\"\""
+				"    p-secondary-label=\"\""
+				"    (p-secondary-action)=\"onSecondaryActionWidget(\\$event)\""
+				"    (p-setting)=\"onSettingWidget(\\$event)\""
+				"    p-title=\"\""
+				"    (p-title-action)=\"onTitleAction(\\$event)\">"
+				"</po-widget>"
+							
+			],
+			"description": "Insere o widget do Portinari"
+	}
+	
+}
