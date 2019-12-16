@@ -1,9 +1,10 @@
 {
     "name": "po-snippets",
-    "displayName": "po-snippets",
+    "displayName": "PO Snippets",
     "description": "",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "publisher": "POSnippets",
+    "icon": "icon/po-icon.png",
     "engines": {
         "vscode": "^1.41.0"
     },
@@ -16,6 +17,15 @@
                 "language": "html",
                 "path": "./snippets/snippets.json"
             }
-        ]
+        ],
+        "iconDefinitions": {
+            "_folder_dark": {
+                "path": "./icon/po-icon.png"
+            }
+        }        
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AlexandreWeber/po-snippets"
     }
 }
