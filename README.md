@@ -1,6 +1,6 @@
 # Po-Snippets
 
-Snippets para auxiliar no desenvolvimento com o Portinari\n
+Snippets para auxiliar no desenvolvimento com o Portinari
 
 Para utilizar os snippets:
 - Acesse a opção Extensions (Ctrl + Shit + x) no Visual code
