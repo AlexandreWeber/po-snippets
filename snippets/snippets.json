@@ -1152,6 +1152,26 @@
 							
 			],
 			"description": "Insere o widget do Portinari"
+	},
+
+	"PO Tag 54": {
+		"prefix": "<po-tag>",
+		"scope": "html",
+		"body": 
+			[
+				"<po-tag"
+				"	(p-click)=\"EventEmitter\""
+				"	p-color=\"color-01\""
+				"	p-icon=\"false\""
+				"	p-inverse=\"false\""
+				"	p-label=\"\""
+				"	p-orientation=\"vertical\""
+				"	p-type=\"info\""
+				"	p-value=\"\" >"
+				"</po-tag>"
+							
+			],
+			"description": "Insere o tag do Portinari"
 	}
 	
 }
