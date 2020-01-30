@@ -75,6 +75,19 @@ Para utilizar o pacote de snipets basta digitar `<po` que uma lista de comandos 
 | `<po-upload>`                     | [Upload](https://portinari.io/documentation/po-upload)                                        |
 | `<po-widget>`                     | [Widget](https://portinari.io/documentation/po-widget)                                        |
 | `<po-tag>`                        | [Tag](https://portinari.io/documentation/po-tag)                                              |
+| `<po-menu-panel>`                 | [Menu Panel](https://portinari.io/documentation/po-menu-panel)                                |
+| `<po-page-blocked-user>`          | [Page Blocked User](https://portinari.io/documentation/po-page-blocked-user)                  |
+| `<po-page-change-password>`       | [Page Change Password](https://portinari.io/documentation/po-page-change-password)            |
+| `<po-page-dynamic-detail>`        | [Page Dynamic Detail](https://portinari.io/documentation/po-page-dynamic-detail)              |
+| `<po-page-dynamic-edit>`          | [Page Dynamic Edit](https://portinari.io/documentation/po-page-dynamic-edit)                  |
+| `<po-page-dynamic-search>`        | [Page Dynamic Search](https://portinari.io/documentation/po-page-dynamic-search)              |
+| `<po-page-dynamic-table>`         | [Page Dynamic Table](https://portinari.io/documentation/po-page-dynamic-table)                |
+| `<po-page-job-scheduler>`         | [Page Job Scheduler](https://portinari.io/documentation/po-page-job-scheduler)                |
+| `<po-progress>`                   | [Progress](https://portinari.io/documentation/po-progress)                                    |
+| `<po-rich-text>`                  | [Rich Text](https://portinari.io/documentation/po-rich-text)                                  |
+| `<po-slide>`                      | [Slide](https://portinari.io/documentation/po-slide)                                          |
+| `<po-tree-view>`                  | [Tree View](https://portinari.io/documentation/po-tree-view)                                  |
+| `<po-url>`                        | [URL](https://portinari.io/documentation/po-url)                                              |
 
 
 # Contribuição

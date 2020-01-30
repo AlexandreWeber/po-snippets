@@ -1182,6 +1182,248 @@
 							
 			],
 			"description": "Insere o tag do Portinari"
-	}
+    },
+
+    "PO Tag 55": {
+        "prefix": "<po-menu-panel>",
+        "scope": "html",
+        "body": 
+            [
+                "<po-menu-panel"
+                "   [p-menus]=\"PoMenuPanelItem[]\">"
+                "</po-menu-panel>"
+            ],
+        "description": "Este é um componente de menu lateral composto apenas por ícones e com um nível, utilizado para navegação em páginas internas, externas da aplicação ou aciona uma ação."
+    },
+
+    "PO Tag 56": {
+        "prefix": "<po-blocked-user>",
+        "scope": "html",
+        "body":
+            [
+                "<po-blocked-user"
+                "   p-contact-email=\"string\""
+                "   p-contact-phone=\"string\""
+                "   p-logo=\"string\""
+                "   p-params=\"PoPageBlockedUserReasonParams\""
+                "   p-reason=\"PoPageBlockedUserReason\""
+                "   p-secondary-logo=\"string\""
+                "   p-url-back=\"string\">"
+                "</po-blocked-user>"
+            ],
+        "description": "O componente po-page-blocked-user é utilizado como template para tela de bloqueio de usuário. É possível definir entre três tipos de telas para alertar o usuário sobre um eventual bloqueio de login."
+    },
+
+    "PO Tag 57": {
+        "prefix": "<po-page-change-password>",
+        "scope": "html",
+        "body": 
+            [
+                "<po-page-change-password"
+                "   p-hide-current-password=\"yes\""
+                "   p-logo=\"string\""
+                "   p-recovery=\"string | Function | PoPageChangePasswordRecovery\""
+                "   [p-requirements]=\"PoPageChangePasswordRequirement[]\""
+                "   p-secondary-logo=\"string\""
+                "   (p-submit)=\"submitPassword(\\$event)\""
+                "   p-token=\"string\""
+                "   p-url-back=\"string\""
+                "   p-url-home=\"string\""
+                "   p-url-new-password=\"string\">"
+                "</po-page-change-password>"
+            ],
+        "description": "O componente po-page-change-password é utilizado como template para tela de cadastro ou alteração de senha."
+    },
+
+    "PO Tag 58": {
+        "prefix": "<po-page-dynamic-detail>",
+        "scope": "html",
+        "body": 
+            [
+                "<po-page-dynamic-detail"
+                "   [p-actions]=\"PoPageDynamicDetailActions\""
+                "   p-auto-focus=\"false\""
+                "   [p-breadcrumb]=\"PoBreadcrumb\""
+                "   [p-fields]=\"fields[]<PoPageDynamicDetailField>\""
+                "   p-service-api=\"string\""
+                "   p-title=\"string\">"
+                "</po-page-dynamic-detail>"
+            ],
+        "description": "O po-page-dynamic-detail é uma página que serve para exibir registros em detalhes, o mesmo também suporta metadados conforme especificado na documentação."
+    },
+
+    "PO Tag 59": {
+        "prefix": "<po-page-dynamic-edit>",
+        "scope": "html",
+        "body":
+            [
+                "<po-page-dynamic-edit"
+                "   [p-actions]=\"PoPageDynamicEditActions\""
+                "   p-auto-router=\"false\""
+                "   [p-breadcrumb]=\"PoBreadCrumb"
+                "   [p-fields]=\"fields[]<PoPageDynamicEditFields>"
+                "   p-service-api=\"string\""
+                "   p-title=\"string\">"
+                "</po-page-dynamic-edit>"
+            ],
+        "description": "O po-page-dynamic-edit é uma página que pode servir para editar ou criar novos registros, o mesmo também suporta metadados conforme especificado na documentação."
+
+    },
+
+    "PO Tag 60": {
+        "prefix": "<po-page-dynamic-search>",
+        "scope": "html",
+        "body": 
+            [
+                "<po-page-dynamic-search"
+                "   [p-actions]=\"actions"
+                "   (p-advanced-search)=\"advancedSearch(\\$event)\""
+                "   [p-breadcrumb]=\"PoBreadcrumb"
+                "   (p-change-disclaimers)=\"changeDisclaimers(\\$event)\""
+                "   [p-filters]=\"filters[]<PoDynamicFormField>\""
+                "   (p-quick-search)=\"quickSearch(\\$event)\""
+                "   p-title=\"string\">"
+                "</po-page-dynamic-search>"
+            ],
+        "description": "Componente com as ações de pesquisa já definidas, bastando que o desenvolvedor implemente apenas a chamada para as APIs e exiba as informações."
+    },
+
+    "PO Tag 61": {
+        "prefix": "<po-page-dynamic-table>",
+        "scope": "html",
+        "body":
+            [
+                "<po-page-dynamic-table"
+                "   [p-actions]=\"pageActions\""
+                "   p-auto-router=\"false\""
+                "   [p-breadcrumb]=\"PoBreadcrumb"
+                "   [p-fields]=\"fields[]<PoPageDynamicTableField>"
+                "   p-service-api=\"string\""
+                "   p-title=\"string\">"
+                "</po-page-dynamic-table>"
+            ],
+        "description": "O po-page-dynamic-table é uma página que exibe uma lista de registros em uma tabela baseado em uma lista de fields, o mesmo também suporta metadados conforme especificado na documentação."
+    },
+
+    "PO Tag 62": {
+        "prefix": "<po-page-job-scheduler>",
+        "scope": "html",
+        "body":
+            [
+                "<po-page-job-scheduler"
+                "   [p-breadcrumb]=\"PoBreadcrumb\""
+                "   p-service-api=\"string\""
+                "   p-title=\"string\">"
+                "</po-page-job-scheduler>"
+            ],
+        "description": "O po-page-job-scheduler é uma página para criação e atualização do Job Scheduler de forma simplificada, apenas informando o serviço (endpoint) para consumo, sem a necessidade de criar componentes e tratamentos dos dados."
+    },
+
+    "PO Tag 63": {
+        "prefix": "<po-progress>",
+        "scope": "html",
+        "body": 
+            [
+                "<po-progress"
+                "   (p-cancel)=\"cancel(\\$event)\""
+                "   p-indeterminate=\"false\""
+                "   p-info=\"string\""
+                "   p-info-icon=\"string\""
+                "   (p-retry)=\"retryAction(\\$event)\""
+                "   [p-status]=\"PoProgressStatus\""
+                "   p-text=\"string\""
+                "   p-value=\"0\">"
+                "</po-progress>"
+            ],
+        "description": "Componente de barra de progresso que possibilita exibir visualmente o progresso/carregamento de uma tarefa."
+    },
+
+    "PO Tag 64": {
+        "prefix": "<po-rich-text>",
+        "scope": "html",
+        "body":
+            [
+                "<po-rich-text"
+                "   p-auto-focus=\"false\""
+                "   (p-change)=\"change(\\$event)\""
+                "   (p-change-model)=\"changeModel(\\$event)\""
+                "   p-error-message=\"string\""
+                "   p-height=\"400\""
+                "   p-help=\"string\""
+                "   p-label=\"string\""
+                "   name=\"string\""
+                "   p-optional=\"true\""
+                "   p-placeholder=\"string\""
+                "   p-readonly=\"false\""
+                "   p-required=\"false\">"
+                "</po-rich-text>"
+            ],
+        "description": "O componente po-rich-text é um editor de textos enriquecidos."
+    },
+
+    "PO Tag 65": {
+        "prefix": "<po-lide>",
+        "scope": "html",
+        "body": 
+            [
+                "<po-slide"
+                "   p-heigth=\"400\""
+                "   p-interval=\"15\""
+                "   p-slides=\"slides[]<PoSlideItem | string | any>\">"
+                "</po-slide>"
+            ],
+        "description": "Componente de slide para visualização e controle de elementos de forma cíclica. Exibe um conjunto de imagens ou dados que permitem customizar sua visualização utilizando a diretiva p-slide-content-template."
+    },
+
+    "PO Tag 66": {
+        "prefix": "<po-tree-view>",
+        "scope": "html",
+        "body": 
+            [
+                "<po-tree-view"
+                "   (p-collapsed)=\"collapsed(\\$event)\""
+                "   (p-expanded)=\"expanded(\\$event)\""
+                "   [p-items]=\"treeViewItems[]<PoTreeViewItems>"
+                "   p-selectable=\"false\""
+                "   (p-selected)=\"select(\\$event)\""
+                "   (p-unselect)=\"unselect(\\$evemt)\">"
+                "</po-tree-view>"
+            ],
+        "description": "O componente fornece um modelo de visualização em árvore, possibilitando a visualização das informações de maneira hierárquica, desta forma sendo possível utilizar até 4 níveis. Nele é possível navegar entre os itens através da tecla tab, permitindo expandir ou colapsar o item em foco por meio das teclas enter e space. Além da navegação, o componente possibilita também a seleção dos itens do primeiro ao último nível, tanto de forma parcial como completa. O componente também possui eventos disparados ao marcar/desmarcar e expandir/colapsar os itens."
+    },
+
+    "PO Tag 67": {
+        "prefix": "<po-url>",
+        "scope": "html",
+        "body":
+            [
+                "<po-url"
+                "   p-auto-focus=\"false\""
+                "   (p-blur)=\"onBlur(\\$event)\""
+                "   (p-change)=\"onChange(\\$event)\""
+                "   (p-change-model)=\"onChangeModel(\\$event)\""
+                "   p-clean=\"true\""
+                "   p-disabled=\"false\""
+                "   (p-enter)=\"onEnter(\\$event)\""
+                "   p-error-pattern=\"string\""
+                "   p-help=\"string\""
+                "   p-icon=\"string\""
+                "   p-label=\"string\""
+                "   p-mask=\"string\""
+                "   p-mask-format-model=\"false\""
+                "   p-maxlength=\"100\""
+                "   p-minlength=\"5\""
+                "   name=\"string\""
+                "   p-no-autocomplete=\"false\""
+                "   p-focus=\"false\""
+                "   p-optional=\"true\""
+                "   p-pattern=\"string\""
+                "   p-placeholder=\"string\""
+                "   p-readonly=\"false\""
+                "   p-required=\"false\">"
+                "</po-url>"
+            ],
+        "description": "Este é um componente baseado em input, com várias propriedades do input nativo e outras propriedades extras como: máscara, pattern, mensagem de erro e etc. Você deve informar a variável que contém o valor como [(ngModel)]="variavel", para que o input receba o valor da variável e para que ela receba as alterações do valor (two-way-databinding). A propriedade name é obrigatória para que o formulário e o model funcionem corretamente."
+    }
 	
 }
