@@ -16,23 +16,23 @@
 	// 	"description": "Log output to console"
 	// }
 
-	// "PO Tag 1": {
-	// 	"prefix": "<po-accordion>",
-	// 	"scope": "html",
-	// 	"body": 
-	// 		[
-	// 			"<!-- Para usar <po-accordion>. importe BrowserAnimationsModule no módulo principal da sua aplicação -->"
-	// 			"<po-accordion>"
-	// 			"	<po-accordion-item p-label=\"Portinari Accordion 1\">"
-	// 			"			Accordion 1"
-	// 			"	</po-accordion-item>"
-	// 			"	<po-accordion-item p-label=\"Portinari Accordion 2\">"
-	// 			"			Accordion 2"
-	// 			"	</po-accordion-item>"
-	// 			"</po-accordion>"
-	// 		],
-	// 		"description": "Insere Accordion do Portinari"
-	// },
+	"PO Tag 1": {
+		"prefix": "<po-accordion>",
+		"scope": "html",
+		"body": 
+			[
+				"<!-- Para usar <po-accordion>. importe BrowserAnimationsModule no módulo principal da sua aplicação -->"
+				"<po-accordion>"
+				"	<po-accordion-item p-label=\"Portinari Accordion 1\">"
+				"			Accordion 1"
+				"	</po-accordion-item>"
+				"	<po-accordion-item p-label=\"Portinari Accordion 2\">"
+				"			Accordion 2"
+				"	</po-accordion-item>"
+				"</po-accordion>"
+			],
+			"description": "Insere Accordion do Portinari"
+	},
 
 	"PO Tag 2": {
 		"prefix": "<po-avatar>",
